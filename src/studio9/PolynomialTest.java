@@ -28,9 +28,9 @@ public class PolynomialTest {
 	
 	@Test
 	public void testDeriv() {
-		Polynomial p1Deriv = synthPoly(new double[] { -7,  0, 33});
-		Polynomial p2Deriv = synthPoly(new double[] {  5, -4, 15 });
-
+		Polynomial p1Deriv = synthPoly(new double[] { 12,  -14, 0});
+		Polynomial p2Deriv = synthPoly(new double[] {  21, 10, -2 });
+		//[5x^2-4x+15]
 		assertEquals(p1Deriv, p1.derivative());
 		assertEquals(p2Deriv, p2.derivative());
 		assertEquals(p0, p0.derivative());
